@@ -232,7 +232,7 @@ class DocumentAST implements Arrayable
             self::TYPES => $types,
             self::DIRECTIVES => $directives,
             self::CLASS_NAME_TO_OBJECT_TYPE_NAME => $this->classNameToObjectTypeNames,
-            self::SCHEMA_EXTENSIONS => $schemaExtensions,
+            self::SCHEMA_EXTENSIONS => $this->schemaExtensions,
         ] = $ast;
 
         // Utilize the NodeList for lazy unserialization for performance gains.
